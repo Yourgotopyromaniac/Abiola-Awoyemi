@@ -1,3 +1,4 @@
 # Abiola-Awoyemi
-Source hosting Repository for My Portfolio Website
-view known issues in issues
+Source hosting Repository for My Portfolio Website.
+
+View known issues in issues.
