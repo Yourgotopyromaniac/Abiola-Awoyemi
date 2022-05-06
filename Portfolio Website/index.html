@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/ScrollTrigger.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@100;200;300;400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/2c69f58432.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/baffle@0.3.6/dist/baffle.min.js"></script>
+    <link rel="icon" type="image/x-icon" sizes="100x100" href="images/favicon.PNG">
+    <title>Abiola Awoyemi</title>
+</head>
+
+<div id="preloader">
+    <h2 id="loading-text" class="loading-text">one sec...</h2>
+    <div id="cradle">
+        <div id="start" class="ball"></div>
+        <div class="ball" id="ball1"></div>
+        <div class="ball" id="ball2"></div>
+        <div class="ball" id="ball3"></div>
+        <div id="end" class="ball"></div>
+        </div>
+</div>
+
+<body class="no-scroll" id="body-light">
+    <div id="wrapper">
+<!--HEADER, CONTAINS NAVBAR ONLY-->
+        <header>
+            <nav id="navbar">
+                <div id="logo" class="logo-light">
+                    <span>call me</span>
+                        <h2 id="name"></h2>
+                </div>
+
+                  <ul id="nav">
+                    <li><a id="link1" href="#ft-about">About</a></li>
+                    <li><a id="link2" href="#ft-projects">Projects</a></li>
+                    <li><a id="link3" href="#ft-learning">Currently Learning</a></li>
+                    <li><a id="link4" href="#ft-contact">Contact</a></li>
+                  </ul>
+   
+            
+                  <div id="theme">
+                    <i id="theme-sun" class="fa-solid fa-sun"></i>
+                    <label class="switch">
+             
+                     <input onclick="darkMode()" type="checkbox" id="d-m-switch">
+             
+                     <span class="slider round"></span>
+             
+                   </label>
+                    <i id="theme-moon" class="fa-solid fa-moon"></i>
+                    </div>
+
+                <div class="menu" id="menu">
+                  <span id="bar1"></span>
+                  <span id="bar2"></span>
+                  <span id="bar3"></span>
+                </div>
+              </nav>
+        </header>
+
+<main id="main-wrapper">
+
+<!--WELCOME SECTION/BANNER-->       
+            <section id="welcome-section" class="hero">
+                <div id="welcome-inner-box">
+                <h1 id="welcome-text" class="welcome-text">
+                    <span class="notbold">Hi, I'm </span><span class="boldtext">Biola</span><span class="notbold" >, Your Next </span><span class="boldtext">Front-end Web developer </span><span class="notbold"> ;)</span>
+                </h1>
+                <a id="hire" class="hire-btn" href="#ft-contact">Hire Me</a>
+                </div>
+            </section>
+
+<!--ABOUT SECTION-->
+            <section id="about" class="about">
+                <span class="faux-top" id="ft-about"></span>
+                <div id="about-text">
+                    <h2 class="inner-title">About Me</h2>
+                    <p class="about-me">
+                            Hi, I'm Awoyemi Abiola, A 21-Year-old Front-end Developer, with two years of experience building aesthetic and user-friendly interfaces by utilizing web technologies such as HTML5, CSS3, and Javascript, as well as web development tools and libraries like Git, SASS/SCSS and GSAP.
+                            <br><br>
+                            My Core Strengths as a Front-end Developer are Dedication to my work, Creativity, and Near-obsessive attention to detail.
+                            <br><br>
+                            I Currently aim to achieve the highest level attainable as a Front-end developer, acquiring a Practical Knowledge of APIs and picking up useful Javascript Frameworks are the next steps for me in this Journey.
+                            <br><br>
+                            When I'm not developing Websites or Applications, I'm Either talking to friends, playing games, or attempting to break the world record for the fastest time to solve a Rubik's cube.
+                    </p>
+                    
+                    <h2 class="inner-title">Bringing Ideas To Life</h2>
+                    <p class="about-me">
+                        Of all my core strengths, I Consider Creativity as my Strongest Suit. There is a popular saying that gets passed around now and then in the tech space, that "Developers Can't Design", which is supposed to perpetuate the notion that Front-end Developers are incapable of creating beautiful interfaces without some sort of reference.
+                        <br><br>
+                        This has always appeared alien to me, Since the only "reference" I have ever had to work with for all of my projects, is an image of what I want in my head, an idea, if you will, which I then build upon till I have been able to bring this idea to life. Work with me and let's bring all your ideas to life!
+                    </p>
+                </div>
+                <div id="about-skills">
+                    <h2 class="inner-title">My Skillset</h2>
+                    <div id="skills">
+                        <div class="skill-tile skill1" id="skill1"><i class="fg-text fa-brands fa-html5"></i>
+                            <h3 class="skill-type">HTML5</h3>
+                            <i class="fa-solid fa-code bg-text"></i>
+                        </div>
+                        <div class= "skill-tile skill2" id="skill2"><i class="fg-text fa-brands fa-css3-alt"></i>
+                            <h4 class="skill-type">CSS 3</h4>
+                            <i class="fa-brands fa-css3 bg-text"></i>
+                        </div>
+                        <div class=" skill-tile skill3" id="skill3"><i class=" fg-text fa-brands fa-js"></i>
+                            <h5 class="skill-type">Javascript</h5>
+                            <span class="material-icons bg-text">data_object</span>
+                        </div>
+                        <div class="skill-tile skill4" id="skill4">
+                        <svg id="svg" class="svg-icon" height="40" viewBox="0 0 24 24" width="40" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12 2c5.522 0 10 4.478 10 10s-4.478 10-10 10S2 17.522 2 12 6.478 2 12 2zm-1.987 13.332c.146.537.13 1.039-.021 1.493l-.054.15a2.803 2.803 0 0 1-.527.821c-.582.633-1.394.872-1.742.671-.375-.219-.188-1.112.487-1.825.726-.765
+                             1.766-1.258 1.766-1.258v-.002l.091-.05zm8.258-9.051c-.452-1.777-3.397-2.362-6.185-1.371-1.656.589-3.453 1.515-4.743
+                              2.723-1.536 1.434-1.78 2.684-1.68 3.206.355 1.843 2.881 3.048 3.92 3.942v.005c-.307.149-2.548 1.274-3.072 2.438-.563 
+                              1.225.088 2.101.513 2.212 1.313.363 2.662-.3 3.388-1.374.699-1.051.638-2.4.337-3.063.413-.112.899-.162 1.524-.086
+                               1.751.199 2.101 1.3 2.024 1.75-.074.449-.436.711-.561.786-.126.076-.163.101-.151.151.013.074.076.074.175.063.138-.025.914-.375.951-1.227.037-1.074-.988-2.273-2.813-2.25-.75.014-1.226.076-1.563.214a.295.295 0 0 0-.088-.088c-1.125-1.213-3.213-2.063-3.125-3.675.025-.588.237-2.137 4-4.012 3.088-1.538 5.551-1.112 5.977-.175.61 1.336-1.314 3.825-4.526 4.187-1.225.138-1.862-.337-2.026-.513-.174-.188-.198-.2-.261-.161-.101.05-.038.212
+                                0 .313.1.249.487.688 1.163.912.587.188 2.024.299 3.75-.375 1.937-.749 3.449-2.838 3.012-4.588l.06.056z"/>
+                            </svg>
+                            <h5 class="skill-type">SCSS/SASS</h5>
+                            <i class="fa-brands fa-sass bg-text"></i>
+                        </div>
+                        <div class= "skill-tile skill5" id="skill5"><i class="fg-text fa-brands fa-git-alt"></i>
+                            <h4 class="skill-type">Git</h4>
+                            <i class="fa-brands fa-git bg-text"></i>
+                        </div>
+                        <div class= "skill-tile skill6" id="skill6"><svg id="svg2" class="svg-icon" xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40">
+                            <path d="M17.964 31.932c-0.417-0.073-0.849-0.271-1.094-0.49-0.167-0.172-0.26-0.406-0.266-0.646 0-0.245 0.125-0.589 0.323-0.932 0.12-0.193 0.214-0.401 0.281-0.62 0.042-0.151 0.13-0.396 0.198-0.552l0.12-0.286 0.031-1.911c0.016-1.057 0.047-2.036 0.073-2.188 0.068-0.438 0.182-0.865 0.333-1.281l0.115-0.276-0.167-0.099c-0.151-0.094-0.276-0.224-0.771-0.813-0.609-0.719-1.411-1.115-2.547-1.25-0.37-0.036-0.745-0.063-1.12-0.078-1.667-0.078-2.62-0.427-3.479-1.271-0.641-0.63-0.974-1.365-1.109-2.448-0.182-1.464-0.385-2.214-0.76-2.823-0.094-0.151-0.198-0.292-0.318-0.422l-0.151-0.151-0.333 0.214c-0.182 0.12-0.438 0.271-0.563 0.339-0.417 0.229-0.813 0.484-1.193 0.76-0.932 0.677-1.948 1.526-2.505 2.083-0.25 0.25-0.38 0.359-0.438 0.349-0.38-0.057-0.089-1.703 0.531-2.943 0.792-1.599 2.125-3.073 3.667-4.068 1.266-0.818 3.313-1.943 4.26-2.339 1.682-0.703 3.859-1.464 5.349-1.87 0.313-0.089 0.505-0.167 0.635-0.255 0.292-0.203 0.578-0.302 0.906-0.307 0.276-0.005 0.302-0.010 0.568-0.188 0.313-0.203 0.406-0.214 0.719-0.104l0.203 0.073 0.25-0.172 0.25-0.167 0.359 0.005c0.276 0.005 0.401-0.005 0.521-0.057 0.151-0.068 0.156-0.078 0.198-0.328 0.094-0.542 0.104-0.813 0.047-1.141-0.073-0.432-0.083-2.109-0.010-2.438 0.078-0.354 0.13-0.427 0.396-0.557 0.396-0.193 0.693-0.25 1.375-0.25 0.833 0 1.255 0.115 1.568 0.417 0.281 0.271 0.328 0.906 0.182 2.396-0.089 0.859-0.099 1.099-0.073 1.661 0.010 0.359 0.036 0.698 0.047 0.745 0.021 0.089 0.042 0.094 0.344 0.099 0.297 0.005 0.349 0.021 0.63 0.167 0.271 0.141 0.474 0.313 0.516 0.438 0.005 0.026 0.052 0.026 0.135 0 0.161-0.047 0.302 0.005 0.417 0.146 0.068 0.089 0.109 0.104 0.266 0.104 0.214 0 0.292 0.052 0.469 0.313 0.083 0.12 0.198 0.208 0.328 0.266 0.292 0.146 0.688 0.552 0.839 0.875 0.234 0.479 0.281 1.036 0.135 1.536-0.052 0.188-0.052 0.193 0.057 0.375 0.229 0.391 0.313 0.87 0.219 1.276l-0.052 0.24 0.156 0.156c0.776 0.776 0.661 2.042-0.286 3.172-0.099 0.12-0.219 0.307-0.266 0.422-0.182 0.484-0.391 0.823-0.661 1.104l-0.276 0.281h-0.281c-0.281 0-0.677-0.094-0.917-0.219-0.099-0.052-0.104-0.052-0.083 0.010 0.063 0.229 0.219 1.161 0.271 1.677 0.083 0.792 0.057 1.943-0.052 2.438-0.078 0.365-0.214 0.719-0.396 1.047-0.104 0.167-0.109 0.203-0.089 0.406 0.031 0.286-0.036 0.766-0.151 1.083-0.141 0.37-0.193 0.542-0.224 0.729-0.026 0.161-0.026 0.161 0.089 0.161 0.151 0 0.234 0.089 0.234 0.266 0 0.078-0.068 0.5-0.151 0.932-0.229 1.214-0.245 1.349-0.245 2.526-0.005 1.214-0.005 1.203 0.271 1.385l0.62 0.401c0.531 0.354 1.104 0.646 1.703 0.875 0.87 0.344 0.99 0.432 0.99 0.724 0 0.13-0.026 0.177-0.135 0.281-0.333 0.323-0.99 0.396-2.313 0.255-0.688-0.063-1.38-0.099-2.068-0.099-1.823-0.026-2.089-0.089-2.328-0.542-0.135-0.26-0.109-0.599 0.078-1.156 0.083-0.245 0.156-0.495 0.219-0.75 0.125-0.604 0.042-1.323-0.25-2.135l-0.25-0.693c-0.245-0.703-0.38-1.99-0.234-2.281 0.026-0.057 0.073-0.068 0.198-0.063l0.156 0.016 0.13-0.271c0.099-0.214 0.208-0.354 0.505-0.651l0.38-0.38-0.021-0.245c-0.016-0.234-0.323-1.37-0.365-1.365-0.016 0-0.099 0.115-0.193 0.26-0.229 0.344-0.734 0.875-1.021 1.068-0.125 0.083-0.229 0.182-0.229 0.214-0.005 0.141-0.125 0.417-0.271 0.609-0.141 0.188-0.151 0.219-0.13 0.385 0.036 0.245-0.042 1.031-0.135 1.443-0.083 0.302-0.198 0.599-0.344 0.885-0.359 0.745-0.63 1.411-0.698 1.719-0.052 0.297-0.078 0.599-0.094 0.896-0.016 0.354-0.052 0.698-0.078 0.771-0.036 0.099-0.036 0.177-0.005 0.328 0.026 0.109 0.042 0.354 0.036 0.547-0.005 0.266 0.016 0.438 0.094 0.75 0.135 0.531 0.161 0.865 0.099 1.063-0.042 0.125-0.083 0.172-0.224 0.24-0.313 0.161-1.198 0.25-1.677 0.167zM19.229 31.505c0.182-0.052 0.339-0.208 0.339-0.349 0-0.063-0.052-0.245-0.115-0.406-0.125-0.307-0.339-1.12-0.339-1.255 0-0.068 0.005-0.073 0.109-0.016l0.115 0.063v-0.146c-0.016-0.135-0.047-0.266-0.089-0.396-0.099-0.297-0.109-0.302-0.74-0.339l-0.427-0.021-0.156 0.151c-0.083 0.089-0.161 0.182-0.224 0.292-0.068 0.135-0.094 0.339-0.052 0.385 0.010 0.016 0.115 0 0.229-0.026 0.068-0.021 0.135-0.031 0.208-0.036 0 0.005-0.115 0.099-0.26 0.198-0.625 0.469-0.844 0.755-0.844 1.12 0 0.38 0.359 0.677 0.922 0.766 0.385 0.057 1.135 0.073 1.323 0.016zM27.703 30.885c0.156-0.188 0.135-0.38-0.063-0.599-0.115-0.115-0.245-0.214-0.391-0.292s-0.292-0.167-0.438-0.26c-0.115-0.083-0.479-0.297-0.813-0.479-0.24-0.13-0.474-0.266-0.703-0.411l-0.094-0.073v-1.432c0-1.411-0.005-1.432-0.078-1.411-0.365 0.099-0.969 0.146-1.734 0.13l-0.828-0.010 0.12 0.292c0.224 0.552 0.339 1.292 0.339 2.141 0 0.318-0.021 0.432-0.099 0.656-0.042 0.109-0.078 0.219-0.115 0.328-0.016 0.047 0.042 0.083 0.255 0.146 0.156 0.047 0.385 0.094 0.516 0.109l0.24 0.026-0.026 0.24c-0.026 0.271 0.005 0.557 0.073 0.646 0.042 0.052 0.198 0.073 0.922 0.104 0.547 0.026 1.141 0.083 1.609 0.151 0.406 0.063 0.844 0.115 0.974 0.115 0.219 0.005 0.24-0.005 0.333-0.115zM19.365 28.448c0.021-0.016 0.052-0.297 0.063-0.63 0.042-0.932 0.078-1.068 0.547-2.12 0.385-0.859 0.589-1.661 0.573-2.229l-0.010-0.339-0.146 0.141c-0.302 0.302-0.094-0.172 0.266-0.594 0.271-0.323 0.365-0.5 0.406-0.786 0.021-0.115 0.063-0.172 0.24-0.307 0.672-0.51 1.156-1.156 1.474-1.948 0.073-0.188 0.26-0.828 0.417-1.422 0.292-1.099 0.448-1.573 0.589-1.776 0.052-0.078 0.073-0.094 0.063-0.042-0.083 0.313-0.109 0.443-0.177 0.849-0.042 0.255-0.12 0.755-0.172 1.104-0.099 0.714-0.203 1.172-0.344 1.526l-0.094 0.24 0.25 0.646c0.26 0.661 0.38 1.141 0.401 1.604l0.016 0.26-0.203 0.042c-0.271 0.047-0.505 0.198-0.667 0.417-0.177 0.255-0.276 0.464-0.229 0.51 0.021 0.021 0.276 0.068 0.568 0.104 0.453 0.052 0.625 0.052 1.224 0.016 0.26-0.010 0.516-0.036 0.771-0.073 0.057-0.021 0.115-0.135 0.208-0.432 0.214-0.682 0.255-0.922 0.229-1.401l-0.021-0.422 0.109-0.141c0.255-0.323 0.453-0.906 0.536-1.589 0.099-0.833-0.083-2.578-0.422-4.078-0.161-0.714-0.229-1.141-0.229-1.453v-0.276l-0.255 0.026c-0.917 0.099-2.026 0.073-2.703-0.068-0.37-0.073-1.302-0.349-1.505-0.438l-0.161-0.073-0.021 0.182c-0.016 0.099-0.031 0.198-0.052 0.302-0.031 0.109-0.021 0.135 0.172 0.323 0.24 0.245 0.313 0.37 0.313 0.536 0 0.104-0.057 0.188-0.349 0.49-0.214 0.224-0.484 0.464-0.693 0.599l-0.339 0.229-0.146 0.505c-0.521 1.849-0.62 3.531-0.276 4.734l0.083 0.302-0.167 0.208c-0.625 0.786-0.995 1.385-1.052 1.719-0.010 0.068-0.063 0.286-0.115 0.49-0.135 0.516-0.24 1.271-0.286 2.089-0.031 0.682-0.078 1.37-0.135 2.052l-0.026 0.203 0.26 0.078c0.146 0.047 0.365 0.099 0.49 0.12 0.234 0.036 0.667 0.026 0.734-0.010zM24.422 25.583c0.406-0.026 0.776-0.089 0.849-0.151 0.031-0.021 0.068-0.13 0.078-0.24l0.026-0.198-0.323 0.073c-0.255 0.052-0.51 0.083-0.766 0.104-0.615 0.026-1.234 0.010-1.844-0.052-0.203-0.031-0.203-0.031-0.141 0.234 0.052 0.198 0.063 0.208 0.594 0.245 0.354 0.031 0.849 0.026 1.526-0.016zM24.083 24.677c0.531-0.047 1.193-0.161 1.323-0.229 0.042-0.021 0.078-0.099 0.094-0.188l0.047-0.276 0.026-0.13-0.13 0.026c-0.578 0.12-1.016 0.156-1.891 0.156-0.854 0-0.953-0.005-1.177-0.083-0.083-0.036-0.177-0.057-0.271-0.063-0.036 0.021-0.042 0.318-0.010 0.526 0.021 0.125 0.042 0.146 0.167 0.182 0.396 0.109 1.063 0.135 1.823 0.073zM14.417 19.979c1.333-0.385 3.078-1.516 4.505-2.932 0.464-0.464 0.521-0.526 0.583-0.734l0.083-0.266c0.010-0.021-0.073-0.057-0.182-0.083-0.286-0.068-0.505-0.234-0.505-0.385 0-0.089-0.052-0.177-0.203-0.339-0.245-0.276-0.307-0.396-0.333-0.661l-0.021-0.214-0.292-0.208c-0.167-0.12-0.75-0.443-1.37-0.755-0.469-0.229-0.932-0.479-1.385-0.75-0.521-0.349-0.87-0.766-1.068-1.26-0.036-0.099-0.083-0.182-0.099-0.182-0.042 0-1.214 1.13-1.714 1.661-1.234 1.302-2.083 2.432-2.62 3.479-0.135 0.26-0.281 0.568-0.323 0.682l-0.078 0.208 0.094 0.349c0.057 0.188 0.177 0.495 0.271 0.677 0.328 0.646 0.719 1.036 1.365 1.354 0.693 0.344 1.307 0.464 2.333 0.448 0.552-0.005 0.714-0.021 0.958-0.094zM3.896 15.411c0.875-0.776 2.083-1.625 3.563-2.505 0.969-0.578 4.714-2.453 6.438-3.219 0.313-0.141 0.594-0.271 0.625-0.286 0.031-0.021 0.12-0.245 0.203-0.495 0.365-1.156 0.547-1.385 1.208-1.536 0.083-0.021 0.104-0.047 0.104-0.13 0-0.151 0.104-0.5 0.193-0.656 0.068-0.12 0.068-0.125 0.010-0.109-0.036 0.010-0.255 0.073-0.484 0.141-3.177 0.917-5.953 2.135-8.349 3.656-2.557 1.625-4.031 3.573-4.458 5.906l-0.031 0.172 0.313-0.307c0.167-0.172 0.469-0.453 0.667-0.625zM27.464 15.854c0.255-0.13 0.651-0.729 0.797-1.203 0.042-0.167 0.125-0.323 0.245-0.453 0.385-0.427 0.703-1.203 0.708-1.734 0-0.828-0.469-1.146-1.151-0.792-0.089 0.042-0.161 0.073-0.172 0.063-0.036-0.036 0.156-0.224 0.391-0.37 0.307-0.203 0.365-0.323 0.365-0.755 0-0.365-0.089-0.656-0.297-0.979-0.094-0.141-0.13-0.234-0.115-0.292l0.094-0.349c0.13-0.464 0.083-0.995-0.12-1.333-0.302-0.51-0.672-0.76-1.188-0.802l-0.302-0.021 0.177 0.198c0.526 0.568 0.781 1.281 0.677 1.891-0.052 0.313-0.099 0.375-0.401 0.495l-0.177 0.073 0.021 0.24c0.036 0.391-0.031 0.677-0.281 1.203-0.125 0.266-0.219 0.505-0.208 0.531 0.031 0.089 0.375 0.255 0.646 0.323l0.266 0.063-0.167 0.057c-0.219 0.068-0.266 0.167-0.266 0.526 0 0.328 0.047 0.464 0.286 0.823 0.109 0.156 0.182 0.318 0.193 0.411 0.021 0.146 0.016 0.156-0.104 0.198-0.135 0.036-0.276 0.063-0.417 0.068-0.49 0.031-0.526 0.047-0.745 0.255-0.198 0.188-0.203 0.198-0.203 0.406 0 0.286 0.109 0.865 0.177 0.943 0.089 0.094 0.583 0.339 0.776 0.375 0.167 0.042 0.344 0.021 0.495-0.057zM20.25 15.464c0.318-0.25 0.568-0.5 0.708-0.714 0.089-0.13 0.094-0.156 0.052-0.266-0.073-0.167-0.552-0.599-0.818-0.729-0.177-0.078-0.365-0.135-0.557-0.161l-0.328-0.042-0.203-0.255c-0.422-0.521-0.656-0.927-0.99-1.714-0.292-0.667-0.547-1.057-0.953-1.443-0.167-0.156-0.286-0.286-0.276-0.286 0.021 0 0.219 0.099 0.448 0.219 0.38 0.203 0.427 0.219 0.599 0.193 0.62-0.073 1.167-0.786 1.365-1.786 0.057-0.281 0.172-0.568 0.292-0.74 0.005-0.005 0.245 0.151 0.526 0.354 0.714 0.505 0.87 0.583 1.276 0.599 0.266 0.010 0.417-0.010 0.896-0.125 1.021-0.25 2.125-0.349 2.797-0.26 0.38 0.052 0.927 0.219 1.333 0.411 0.401 0.188 0.479 0.198 0.609 0.083 0.109-0.094 0.109-0.109 0.109-0.458-0.005-0.516-0.193-1.073-0.479-1.406-0.146-0.172-0.557-0.453-0.964-0.667-0.146-0.078-0.292-0.156-0.432-0.234-0.193-0.115-0.411-0.099-1.005 0.057-0.688 0.177-0.87 0.177-1.656-0.026-0.667-0.167-0.708-0.172-1.365-0.068-0.349 0.052-1.224 0.021-1.516-0.057-0.146-0.042-0.292-0.083-0.432-0.135-0.255-0.099-0.698-0.115-1.099-0.042-0.797 0.141-1.401 0.573-1.62 1.161-0.115 0.297-0.099 0.438 0.052 0.531 0.24 0.151 0.557 0.563 0.557 0.724 0 0.010-0.078-0.057-0.167-0.151-0.224-0.234-0.427-0.339-0.667-0.339-0.318 0.010-0.604 0.198-0.734 0.484-0.068 0.182-0.13 0.37-0.177 0.563-0.146 0.531-0.276 0.813-0.552 1.188-0.245 0.339-0.281 0.49-0.193 0.87 0.219 0.958 0.599 1.344 2.187 2.245 0.833 0.474 1.26 0.74 1.573 0.974 0.24 0.177 0.245 0.188 0.224 0.323-0.047 0.313 0.151 0.651 0.542 0.927 0.099 0.068 0.161 0.141 0.161 0.193 0 0.094 0.266 0.224 0.458 0.224 0.109 0 0.193-0.047 0.417-0.219zM26.672 13.708c0.604 0.021 0.635-0.026 0.313-0.401-0.339-0.391-0.432-0.708-0.307-1.057l0.052-0.135-0.214-0.104c-0.073-0.036-0.146-0.073-0.219-0.099-0.036 0.141-0.073 0.276-0.104 0.417-0.078 0.318-0.172 1.141-0.177 1.49 0 0.031 0.052 0.021 0.141-0.036 0.125-0.073 0.188-0.083 0.516-0.073zM24.646 13.677c0.365-0.021 0.74-0.047 0.839-0.063l0.182-0.026 0.021-0.599c0.031-0.854 0.156-1.359 0.526-2.167 0.26-0.573 0.375-1.073 0.318-1.448-0.021-0.161-0.031-0.172-0.25-0.266-0.401-0.161-0.818-0.271-1.245-0.339-0.411-0.057-1.62-0.026-2.073 0.063-0.188 0.031-0.531 0.104-0.76 0.161-0.568 0.13-0.87 0.115-1.302-0.073-0.427-0.188-0.698-0.359-0.953-0.599-0.203-0.188-0.224-0.198-0.276-0.135-0.042 0.047-0.063 0.188-0.078 0.49-0.016 0.464-0.089 0.708-0.292 1.036-0.047 0.068-0.083 0.141-0.115 0.214 0 0.016 0.156 0.198 0.349 0.396 0.667 0.693 0.995 0.87 1.521 0.833 0.172-0.016 0.292-0.010 0.292 0.010 0 0.042-0.339 0.307-0.479 0.38-0.068 0.036-0.083 0.073-0.073 0.151l0.083 0.547c0.047 0.313 0.083 0.458 0.13 0.5 0.125 0.104 0.771 0.438 1.177 0.604 0.531 0.214 0.823 0.292 1.229 0.328 0.5 0.042 0.51 0.042 1.229 0zM20.339 13.104c0.010-0.016-0.026-0.318-0.094-0.667-0.083-0.474-0.13-0.646-0.182-0.693-0.036-0.031-0.229-0.167-0.422-0.307-0.255-0.182-0.495-0.385-0.719-0.599l-0.359-0.354-0.193 0.099-0.203 0.109c0.016 0.083 0.047 0.161 0.083 0.234 0.057 0.125 0.172 0.432 0.255 0.682 0.219 0.651 0.391 0.964 0.823 1.531l0.161 0.214 0.307 0.047c0.172 0.026 0.344 0.063 0.391 0.078 0.073 0.031 0.083 0.016 0.104-0.151 0.010-0.073 0.026-0.151 0.047-0.224zM26.938 6.625c0.266-0.026 0.313-0.063 0.198-0.182-0.073-0.073-0.24-0.078-0.375-0.016-0.089 0.042-0.109 0.031-0.25-0.12-0.146-0.161-0.156-0.167-0.339-0.146-0.167 0.021-0.193 0.016-0.214-0.052-0.068-0.115-0.146-0.214-0.24-0.302-0.12-0.135-0.266-0.24-0.432-0.307-0.323-0.125-0.505-0.109-0.813 0.063-0.891 0.484-0.854 0.479-1.714 0.26-0.802-0.203-1.401-0.411-1.594-0.542-0.161-0.109-0.505-0.229-0.792-0.266-0.214-0.031-0.349 0.016-0.552 0.182l-0.109 0.089 0.099 0.172c0.135 0.24 0.12 0.255-0.083 0.078-0.219-0.182-0.479-0.307-0.646-0.313-0.12 0-0.474 0.156-0.516 0.224-0.016 0.021 0.094 0.047 0.24 0.057 0.151 0.016 0.359 0.068 0.5 0.125 0.365 0.156 0.552 0.208 0.885 0.24 0.365 0.036 1.026-0.005 1.104-0.068 0.042-0.036 0.156-0.042 0.396-0.021 0.318 0.021 0.448 0.052 1.203 0.255 0.438 0.12 0.745 0.109 1.266-0.031 0.24-0.068 0.542-0.135 0.667-0.151 0.214-0.021 0.255-0.010 0.589 0.141 0.531 0.24 0.813 0.391 0.969 0.531 0.156 0.135 0.177 0.135 0.552 0.104zM23.969 5.714l0.318-0.167-0.010-0.323c-0.005-0.224-0.016-0.443-0.026-0.661l-0.026-0.333-0.318 0.245c-0.188 0.146-0.37 0.255-0.448 0.271-0.229 0.042-1.359 0-1.464-0.057-0.141-0.104-0.271-0.219-0.391-0.344l-0.292-0.297-0.005 0.177c0 0.094-0.010 0.255-0.031 0.354-0.026 0.188-0.026 0.193 0.177 0.448 0.109 0.141 0.198 0.266 0.198 0.281 0 0.099 1.505 0.568 1.844 0.573 0.109 0 0.245-0.047 0.474-0.167zM23.365 4.531c0.375-0.073 0.557-0.344 0.698-1.031 0.146-0.74 0.219-1.901 0.151-2.396-0.063-0.448-0.563-0.646-1.516-0.615-0.594 0.021-0.839 0.078-1.042 0.25-0.125 0.104-0.125 0.115-0.182 0.609-0.104 0.948 0.052 2.297 0.323 2.802 0.13 0.245 0.245 0.333 0.484 0.375 0.271 0.047 0.849 0.047 1.083 0.005z"/>
+                          </svg>
+                            <h4 class="skill-type">GSAP</h4>
+                            <span id="nsb" class="bg-text">Green<span class="boldtext" >Sock</span></span>
+                        </div>
+                    </div>
+                </div> 
+            </section>
+
+ <!--PROJECTS SECTION-->   
+ 
+            <section id="projects" class="project-box">
+                <span class="faux-top" id="ft-projects"></span>
+                <h2 id="projects-title"  class="inner-title">Projects</h2>
+
+                <div id="projects-inner-div">
+
+                    <div class="project-case odd">
+                        <div class="project-desc">
+                            <h2 class="project-title">Haven - Video Games' Review Website</h2>
+                            <p class="project-info">Haven is a fully responsive Video Game Review Multi-Page Website. This was the first major personal project I worked on after I started learning Front-end development in 2020.
+                                <br><br>
+                                I was able to apply my knowledge on the basics of HTML and CSS, CSS Properties and Values, pseudo-elements (You can tell from the demo I had a lot of fun using the ::hover CSS pseudo-element), webpage structuring, as well as site responsiveness with the use of CSS media queries.
+                            <br>
+                            <br>
+                            <em>Hover on desktop, Tap on Mobile to play Demo</em>
+                            </p>
+                            <h2 class="proj-number" >1</h2>
+                            <h4 class="built-with">Built with <i class="fa-brands fa-html5"></i> <i class="fa-brands fa-css3-alt"></i></h4>
+                        </div>
+                        <div id="project2" class="project-tile">
+                            <div class="video haven-video">
+                                <video class="proj-demo" loop preload="none" muted="true">
+                                  <source src="images/haven.webm" type="video/webm">
+                                </video>
+                            </div>
+                            <div class="proj-link-container">
+                                <a id="proj-link3" target="_blank" href="https://yourgotopyromaniac.github.io/Web-projects/cipher/cipher.html"class="project-link left-link github">Visit Site</a>
+                                <i class="fa-brands fa-github"></i>
+                                <a id="proj-link4" target="_blank" href="https://github.com/Yourgotopyromaniac/Web-projects/tree/master/cipher"class="project-link right-link github-source">Source Code</a>
+                            </div>
+                        </div> 
+                    </div>
+                    <div class="project-case even">
+                        <div class="project-desc">
+                            <h2 class="project-title">3Buy3 - Online Store Landing Page</h2>
+                            <p class="project-info"> This is a fully responsive landing page for a speedcube online Store, Complete with a hero section, a grid section consisting of items available for purchase, embedded tutorial videos, and a newsletter form.
+                                <br><br>
+                                I built this as a side project after taking a course on responsive web design and was able to apply my knowledge on CSS Grids, Flexbox, and Site Responsiveness. A fully functional carting feature with Javascript (and a corresponding page) is currently in development.
+                            <br>
+                            <br>
+                            <em>Hover on desktop, Tap on Mobile to play Demo</em>
+                            </p>
+                            <h2 class="proj-number" >2</h2>
+                            <h4 class="built-with">Built with <i class="fa-brands fa-html5"></i> <i class="fa-brands fa-css3-alt"></i></h4>
+                        </div>
+                        
+                        <div id="project1" class="project-tile">
+                            <div class="video b3-video">
+                                <video class="proj-demo" loop preload="none" muted="true">
+                                  <source src="images/3buy3.webm" type="video/webm">
+                                </video>
+                            </div>
+                            <div class="proj-link-container">
+                                <a id="proj-link1" target="_blank" href="https://yourgotopyromaniac.github.io/Web-projects/Product%20Landing%20Page%202.0/index.html"class="project-link left-link github">Visit Site</a>
+                                <i class="fa-brands fa-github"></i>
+                                <a id="proj-link2" target="_blank" href="https://github.com/Yourgotopyromaniac/Web-projects/tree/master/Product%20Landing%20Page%202.0"class="project-link right-link github-source">Source Code</a>
+                            </div>
+                        </div>  
+                    </div>
+                    <div class="project-case odd">
+                        <div class="project-desc">
+                            <h2 class="project-title">ToDo App</h2>
+                            <p class="project-info">My first implementation of Javascript in a project; A simple ToDo App I built to apply newly gained Knowledge from a Javascript Basics course. It consists of all four features of a CRUD Application.
+                                <br><br>  
+                                Apart from the knowledge gained and applied on CRUD concepts, I was also able to apply knowledge on manipulation of HTML's Document Object Model with Javascript, or put simply, DOM manipulation, an important aspect of Javascript's Application in web development.
+                            <br>
+                            <br>
+                            <em>Hover on desktop, Tap on Mobile to play Demo</em>                            
+                            </p>
+                            <h2 class="proj-number" >3</h2>
+                            <h4 class="built-with">Built with <i class="fa-brands fa-html5"></i> <i class="fa-brands fa-css3-alt"></i> <i class="fa-brands fa-js"></i></h4>
+                        </div>
+                        <div id="project4" class="project-tile">
+                            <div class="video todo-video">
+                                <video class="proj-demo" loop preload="none" muted="true">
+                                  <source src="images/todo.webm" type="video/webm">
+                                </video>
+                            </div>
+                            <div class="proj-link-container">
+                                <a id="proj-link7" target="_blank" href="https://yourgotopyromaniac.github.io/Todo/"class="project-link left-link github">Visit Site</a>
+                                <i class="fa-brands fa-github"></i>
+                                <a id="proj-link8" target="_blank" href="https://github.com/Yourgotopyromaniac/Todo"class="project-link right-link github-source">Source Code</a>
+                            </div>
+                        </div>
+                       
+                    </div>
+                    <div class="project-case even">
+                        <div class="project-desc">
+                            <h2 class="project-title">CSS Technical Documentation Page</h2>
+                            <p class="project-info">A documentation page for CSS, I built this as part of A set of projects on a course on responsive web design, it's completely responsive, and features a working dark mode function, I had always wanted to implement a dark mode feature, and figured I would be able to do it when I understood enough of javascript, so being able to implement it in this project independently was a major moment of progress for me, other features include a custom scrollbar and a functional back to top button.
+                                <br><br>
+                                This project also helped me get a better understanding of the CSS Positioning property and all its possible values.
+                            <br>
+                            <br>
+                            <em>Hover on desktop, Tap on Mobile to play Demo</em>
+                            </p>
+
+                            <h2 class="proj-number" >4</h2>
+                            <h4 class="built-with">Built with <i class="fa-brands fa-html5"></i> <i class="fa-brands fa-css3-alt"></i> <i class="fa-brands fa-js"></i></h4>
+                        </div>
+                        <div id="project3" class="project-tile">
+                            <div class="video tdp-video">
+                                <video class="proj-demo" loop preload="none" muted="true">
+                                  <source src="images/tdp.webm" type="video/webm">
+                                </video>
+                            </div>
+                            <div class="proj-link-container">
+                                <a id="proj-link5" target="_blank" href="https://yourgotopyromaniac.github.io/Web-projects/Technical%20Documentation%20Page/index.html"class="project-link left-link">Visit Site</a>
+                                <i class="fa-brands fa-github"></i>
+                                <a id="proj-link6" target="_blank" href="https://github.com/Yourgotopyromaniac/Web-projects/tree/master/Technical%20Documentation%20Page"class="project-link right-link">Source Code</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-case odd">
+                        <div class="project-desc">
+                            <h2 class="project-title">Google Homepage Clone</h2>
+                            <p class="project-info">A relatively simple addition to my projects' showcase; A pixel-perfect clone of the Google Search homepage built as part of a set of tasks in a public Internship I underwent in 2021.
+                                <br><br>
+                                I've added it to my showcase to provide a visual representation of what I described earlier as "near-obsessive" attention to detail. I wouldn't need a design to build beautiful interfaces, but I always make sure I deliver every detail down to the last pixel if I ever have to convert one.
+                            <br>
+                            <br>
+                            <em>Hover on desktop, Tap on Mobile to play Demo</em>
+                            </p>
+                            <h2 class="proj-number" >5</h2>
+                            <h4 class="built-with">Built with <i class="fa-brands fa-html5"></i> <i class="fa-brands fa-css3-alt"></i></h4>
+                        </div>
+                        <div id="project5" class="project-tile">
+                            <div class="video google-video">
+                                <video class="proj-demo" loop preload="none" muted="true">
+                                  <source src="images/google.webm" type="video/webm">
+                                </video>
+                            </div>
+                            <div class="proj-link-container">
+                                <a id="proj-link9" target="_blank" href="https://yourgotopyromaniac.github.io/Zuri_Tasks/Google/index.html"class="project-link left-link github">Visit Site</a>
+                                <i class="fa-brands fa-github"></i>
+                                <a id="proj-link10" target="_blank" href="https://github.com/Yourgotopyromaniac/Zuri_Tasks/tree/main/Google"class="project-link right-link github-source">Source Code</a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </section>
+
+<section id="uptosection">
+    <span class="faux-top" id="ft-learning"></span>
+        <h2 class="inner-title">What am I up to?</h2>
+
+        <div class="text-box">
+            <div id="quote-box" class="quote">
+            
+                <h2 class="quote-text">
+                    <i class="fa-solid fa-quote-left"></i>
+                    <em>There's always room for improvement...</em>
+                    <i class="fa-solid fa-quote-right"></i>
+                </h2>
+            </div>
+    
+            <p class="upto-text">...and for a Front-end developer who only just started getting his feet wet, you can imagine said room is quite large, which is why I always like to make sure I am constantly
+                learning and adding to my skillset.
+                <br><br>
+                I expressed earlier that the next step in my journey to becoming a proficient Front-end developer is picking up useful Javascript Frameworks and Libraries to build a solid stack.
+                I have decided to start with ReactJS due to its flexibility which benefits me as a developer and its widespread compatibility enabling me to build a variety of applications across all kinds of devices for as many users as possible. <span class="easter-egg"> I hope</span>
+                <br><br>
+                I am currently taking a beginners course for ReactJS on FreeCodeCamp, you can monitor my progress so far below;
+                </p>
+        </div>
+        
+        <div id="learning-topics">
+            <div id="topic1" class="learning-box small-learning completed">
+
+                <i class="fa-solid fa-circle-check"></i>
+                <div class="completed-content">
+                    <i class="fa-brands fa-react"></i>
+                    <h4 class="learning-text small-learning-text">React Development Environment</h4>
+                </div>
+
+            </div>
+            <div id="topic2" class="learning-box med-learning completed">
+
+                <i class="fa-solid fa-circle-check"></i>
+                <div class="completed-content">
+                    <i class="fa-brands fa-react"></i>
+                    <h4 class="learning-text med-learning-text">JSX Syntax</h4>
+                </div>
+
+            </div>
+            <div id="topic3" class="learning-box big-learning">
+                <i class="fa-solid fa-caret-down"></i>
+                <i class="fa-brands fa-react"></i>
+               <h4 class="learning-text big-learning-text">React Components</h4> 
+               <i id="hourglass" class="fa-solid fa-hourglass"></i>
+            </div>
+            <div id="topic4" class="learning-box med-learning undone">
+                <i class="fa-brands fa-react"></i>
+                <h4 class="learning-text med-learning-text" >React State</h4>
+            </div>
+            <div id="topic5" class="learning-box small-learning undone">
+                <i class="fa-brands fa-react"></i>
+                <h4 class="learning-text small-learning-text">React Props</h4>
+            </div>
+            <div id="topic6" class="learning-box smaller-learning undone">
+                <i class="fa-brands react-inside fa-react"></i>? 
+            </div>
+        </div>    
+</section>
+
+<!--CONTACT SECTION-->
+            <section id="contact" class="contact-box">
+                <span class="faux-top" id="ft-contact"></span>
+                <div id="contact-card">
+                    <div id="contact-text">
+                        <h2 id="contact-title" class="inner-title" >Contact Me</h2>  
+                        <p>I'm Currently open to Entry-level Front-end roles, Internships, and any relevant projects. If you would like to connect or work with me for any of the positions above, feel free to contact me through ;
+                        </p>
+                    </div>
+    
+                    <div id="contact-icons">
+                        <i class="fa-solid fa-envelope fa-brands"><a id= "profile-link" class="profile-link" href="mailto:cipherx809@gmail.com" target="_blank"></a></i>
+                        <i class="fa-brands fa-github"><a id= "profile-link" class="profile-link" href="https://github.com/yourgotopyromaniac" target="_blank"></a></i>
+                        <i class="fa-brands fa-twitter"><a id= "profile-link" class="profile-link" href="https://twitter.com/biola_e" target="_blank"></a></i>
+                        <i class="fa-brands fa-linkedin"><a id= "profile-link" class="profile-link" href="https://www.linkedin.com/in/emmanuel-awoyemi-a908b51aa/" target="_blank"></a></i>
+                    </div>
+                </div>
+
+
+            </section>
+        
+</main>
+
+<!--FOOTER-->
+<footer id="footer">
+    <div class="footer-box">
+        <p id="footer-text">  Designed and Developed ; Awoyemi Abiola, 2022. </p>
+        <div id="footer-other">
+            <a id="footer-link1" target="_blank" href="#">Known Issues</a> 
+           <a id="footer-link2" target="_blank" href="https://forms.gle/iDDRfHCS8WzqKyfUA">Report an Issue</a>  
+        </div>
+    </div>
+</footer>
+
+
+ <!--BACK TO TOP BUTTON-->   
+    <a id="back-to-top" href="#welcome-section">
+        <i class="fa-solid fa-arrow-up"></i>
+        <span>Back to top</span>
+    </a> 
+</div>
+
+</body>
+</html>
+
+<script src="index.js"></script>
+<script src="sTrigger.js"></script>
+
