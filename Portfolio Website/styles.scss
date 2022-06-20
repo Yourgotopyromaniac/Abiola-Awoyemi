@@ -402,14 +402,14 @@ nav ul li a
 nav .menu {
   position: relative;
   margin: 20px;
-  height: 35px;
-  width: 35px;
+  height: 28px;
+  width: 28px;
   display: none;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(2, 1fr);
   grid-column-gap: 0px;
   grid-row-gap: 0px;
-  place-items: center;    
+  place-items:  start center;    
   cursor: pointer; 
 }
 
