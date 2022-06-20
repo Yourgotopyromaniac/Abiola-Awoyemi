@@ -1,25 +1,24 @@
-function baffleText()
-{
-    const text =  baffle(".notbold");
-    text.set({
-      characters: '░▒░░██░███▓ █ ░██ ██░░ █▒ ▓██░ ░',
-            speed: 300
-    });
 
-    const text2 =  baffle(".boldtext");
-    text.set({
-      characters: '░▒░░██░███▓ █ ░██ ██░░ █▒ ▓██░ ░',
-            speed: 300
-    });
 
-    text.start();
-    text.reveal(2500);
+setTimeout(() => {
+  const text =  baffle(".notbold");
+  text.set({
+    characters: '░▒░░██░███▓ █ ░██ ██░░ █▒ ▓██░ ░',
+          speed: 300
+  });
 
-    text2.start();
-    text2.reveal(2500);
-}
+  const text2 =  baffle(".boldtext");
+  text.set({
+    characters: '░▒░░██░███▓ █ ░██ ██░░ █▒ ▓██░ ░',
+          speed: 300
+  });
 
-setTimeout(() => {baffleText();}, 4050);
+  text.start();
+  text.reveal(2500);
+
+  text2.start();
+  text2.reveal(2500);
+}, 4050);
 
 const switchButton = document.getElementById("d-m-switch");
 const ballArray = document.getElementsByClassName("ball");

@@ -462,71 +462,70 @@ nav ul li a {
 }
 
 nav .menu {
-  width: 22px;
-  height: 16px;
-  cursor: pointer;
-  display: none;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
   position: relative;
   margin: 20px;
+  height: 35px;
+  width: 35px;
+  display: none;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  -ms-grid-rows: (1fr)[2];
+      grid-template-rows: repeat(2, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  place-items: center;
+  cursor: pointer;
 }
 
 nav .menu span {
   background: #3c3c3c;
-  -webkit-transition: 0.5s ease;
-  transition: 0.5s ease;
-  -webkit-transform-origin: left;
-          transform-origin: left;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+  height: 5px;
+  width: 5px;
+  border-radius: 50%;
 }
 
-#bar1 {
-  height: 2px;
-  width: 100%;
+#bar1, #bar4 {
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
 }
 
-#bar2 {
-  height: 2px;
-  width: 70%;
-  -ms-flex-item-align: end;
-      align-self: flex-end;
+#bar1, #bar2 {
+  -webkit-transform-origin: top;
+          transform-origin: top;
 }
 
-#bar3 {
-  height: 2px;
-  width: 100%;
-  -ms-flex-item-align: end;
-      align-self: flex-end;
+#bar3, #bar4 {
+  -webkit-transform-origin: bottom;
+          transform-origin: bottom;
+}
+
+#bar2, #bar3 {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+nav .menu.active {
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+  width: 28px;
 }
 
 nav .menu.active span {
   background: #3c3c3c;
+  height: 10px;
+  width: 2px;
 }
 
-nav .menu.active span:nth-child(1) {
-  -webkit-transform: rotate(40deg);
-          transform: rotate(40deg);
+nav .menu.active span:nth-child(1), nav .menu.active span:nth-child(2) {
+  margin-top: 10px;
 }
 
-nav .menu span:nth-child(3) {
-  -webkit-transform-origin: left;
-          transform-origin: left;
-}
-
-nav .menu.active span:nth-child(3) {
-  -webkit-transform: rotate(-40deg);
-          transform: rotate(-40deg);
-  width: 100%;
-}
-
-nav .menu.active span:nth-child(2) {
-  -webkit-transform: scale(0);
-          transform: scale(0);
+nav .menu.active span:nth-child(3), nav .menu.active span:nth-child(4) {
+  margin-bottom: 10px;
 }
 
 /*Styling for Theme Switch*/
@@ -1624,9 +1623,8 @@ other classes overiding the dark mode declarations due to specificity*/
     font-size: 36px;
   }
   nav .menu {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
+    display: -ms-grid;
+    display: grid;
     left: 1em;
   }
   nav ul {
@@ -1828,10 +1826,9 @@ other classes overiding the dark mode declarations due to specificity*/
     font-size: 36px;
   }
   nav .menu {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    left: 1em;
+    display: -ms-grid;
+    display: grid;
+    left: 1.5em;
   }
   nav ul {
     --height: 0px;
@@ -2067,9 +2064,8 @@ other classes overiding the dark mode declarations due to specificity*/
     font-size: 36px;
   }
   nav .menu {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
+    display: -ms-grid;
+    display: grid;
     left: 1em;
   }
   nav ul {
@@ -2294,9 +2290,8 @@ other classes overiding the dark mode declarations due to specificity*/
     font-size: 36px;
   }
   nav .menu {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
+    display: -ms-grid;
+    display: grid;
     left: 1em;
   }
   nav ul {
@@ -2415,6 +2410,7 @@ other classes overiding the dark mode declarations due to specificity*/
   }
   .project-desc, .project-tile {
     width: 100%;
+    margin: center;
   }
   .project-link {
     padding: 0.5em;

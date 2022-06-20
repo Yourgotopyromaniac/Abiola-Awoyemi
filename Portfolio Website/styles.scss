@@ -400,61 +400,72 @@ nav ul li a
 }
 
 nav .menu {
-  width: 22px;
-  height: 16px;
-  cursor: pointer;
-  display: none;
-  flex-direction: column;
-  justify-content: space-between;
   position: relative;
   margin: 20px;
+  height: 35px;
+  width: 35px;
+  display: none;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  place-items: center;    
+  cursor: pointer; 
 }
 
-nav .menu span {
+nav .menu span 
+{
+
   background: $base-dark;
-  transition: 0.5s ease;
-  transform-origin: left;
+  transition: 0.3s ease-in-out;
+  height: 5px;
+  width: 5px;
+  border-radius: 50%;
 }
 
-#bar1
+
+
+#bar1, #bar4
 {
-    height: 2px;
-    width: 100%;
+    transform: rotate(-45deg);
 }
-#bar2
+#bar1, #bar2
 {
-    height: 2px;
-    width: 70%;
-    align-self: flex-end;
+    transform-origin: top;
 }
 
-#bar3
+#bar3, #bar4
 {
-    height: 2px;
-    width: 100%;
-    align-self: flex-end;
+    transform-origin: bottom;
+}
+#bar2, #bar3
+{
+    transform: rotate(45deg);
 }
 
-nav .menu.active span {
+nav .menu.active
+{
+    transition: 0.3s ease-in-out;
+    transform: rotate(180deg);
+    width: 28px;
+}
+nav .menu.active span 
+{
   background: $base-dark;
+  height: 10px;
+  width: 2px;
 }
 
-nav .menu.active span:nth-child(1) {
-  transform:  rotate(40deg);
+nav .menu.active span:nth-child(1),nav .menu.active span:nth-child(2) {
+  margin-top: 10px;
 }
 
-nav .menu span:nth-child(3) {
-  transform-origin: left;
+
+nav .menu.active span:nth-child(3), nav .menu.active span:nth-child(4) {
+    margin-bottom: 10px;
 }
 
-nav .menu.active span:nth-child(3) {
-  transform: rotate(-40deg);
-  width: 100%;
-}
 
-nav .menu.active span:nth-child(2) {
-  transform: scale(0);
-}
 
 
 /*Styling for Theme Switch*/
@@ -1443,7 +1454,7 @@ other classes overiding the dark mode declarations due to specificity*/
         font-size: 36px;
     }
     nav .menu {
-        display: flex;
+        display: grid;
         left: 1em;
       }
     
@@ -1675,8 +1686,8 @@ other classes overiding the dark mode declarations due to specificity*/
         font-size: 36px;
     }
     nav .menu {
-        display: flex;
-        left: 1em;
+        display: grid;
+        left: 1.5em;
       }
     
       nav ul {
@@ -1941,7 +1952,7 @@ other classes overiding the dark mode declarations due to specificity*/
         font-size: 36px;
     }
     nav .menu {
-        display: flex;
+        display: grid;
         left: 1em;
       }
     
@@ -2206,7 +2217,7 @@ other classes overiding the dark mode declarations due to specificity*/
         font-size: 36px;
     }
     nav .menu {
-        display: flex;
+        display: grid;
         left: 1em;
       }
     
@@ -2328,6 +2339,7 @@ other classes overiding the dark mode declarations due to specificity*/
     .project-desc, .project-tile
     {
         width: 100%;
+        margin: center;
     }
 
     .project-link
@@ -2410,6 +2422,7 @@ other classes overiding the dark mode declarations due to specificity*/
     #preloader
     {
         display: none;
+        
     }
     nav
     {
