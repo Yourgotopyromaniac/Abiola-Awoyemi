@@ -454,6 +454,7 @@ nav .menu.active span
   background: $base-dark;
   height: 10px;
   width: 2px;
+  border-radius: 0%;
 }
 
 nav .menu.active span:nth-child(1),nav .menu.active span:nth-child(2) {
