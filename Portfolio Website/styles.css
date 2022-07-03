@@ -83,6 +83,11 @@ html {
   overflow-y: hidden;
 }
 
+.hidden-a11y {
+  position: absolute;
+  left: -6000px;
+}
+
 body {
   font-family: 'sora','sans-serif';
   padding: 0;
