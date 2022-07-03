@@ -27,6 +27,14 @@ const projectsArray = document.getElementsByClassName("project-tile");
 const lboxArray = document.getElementsByClassName("learning-box");
 const svgArray = document.getElementsByTagName("svg");
 const barsArray = document.getElementsByClassName("menu-bars");
+const heroParallax = document.getElementById("contact");
+
+window.addEventListener("scroll", () =>
+{ 
+    let offset = window.pageYOffset;
+    heroParallax.style.backgroundPositionY = offset * 0.7 + "px";
+
+})
 
 function darkMode() 
 {

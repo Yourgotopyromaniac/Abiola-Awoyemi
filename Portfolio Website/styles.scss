@@ -605,11 +605,16 @@ border-radius: 50%;
     
 
 /*Styling For Welcome Section/Banner*/
+.a11y
+{
+    opacity: 0;
+}
 .hero
 {
     height: 100vh;
     width: 100%;
-    background-image: url(images/whitebanner.jpg);
+    background-image: url(images/whitebanner.webp);
+    background-attachment: fixed;
     background-size: cover;
     display: flex;
     align-items: center;
@@ -886,25 +891,25 @@ h4 i
 }
 .tdp-video
 {
-    background-image: url('images/tdp_image.PNG');
+    background-image: url('images/tdp_image.webp');
 }
 .todo-video
 {
-    background-image: url('images/todo_image.PNG');
+    background-image: url('images/todo_image.webp');
 }
 
 .haven-video
 {
-    background-image: url('images/haven_image.PNG');
+    background-image: url('images/haven_image.webp');
 }
 
 .b3-video
 {
-    background-image: url('images/3buy3_image.PNG');
+    background-image: url('images/3buy3_image.webp');
 }
 .google-video
 {
-    background-image: url('images/google_image.PNG');
+    background-image: url('images/google_image.webp');
 }
 video::-webkit-media-controls
 {
@@ -1146,7 +1151,7 @@ video::-webkit-media-controls
     width: 100%;
     height: 100vh;
     padding-bottom: 2em;
-    background-image: url(images/whitebanner2.jpg);
+    background-image: url(images/whitebanner2.webp);
     background-size: cover;
 }
 
