@@ -1947,14 +1947,17 @@ other classes overiding the dark mode declarations due to specificity*/
     -webkit-box-pack: space-evenly;
         -ms-flex-pack: space-evenly;
             justify-content: space-evenly;
+    padding-left: 1.5em;
+    padding-right: 1.5em;
   }
   .project-title {
     font-size: 1.2em;
   }
   .project-desc {
     margin-bottom: 2em;
+    width: 100%;
   }
-  .project-desc, .project-tile {
+  .project-tile {
     width: 100%;
   }
   .project-link {
