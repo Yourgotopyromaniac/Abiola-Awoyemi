@@ -1762,11 +1762,11 @@ other classes overiding the dark mode declarations due to specificity*/
 
     #about-text
     {
-        padding: 1em;
+        padding: 2em;
         top: 0;
         margin-left: 0;
         align-self: center;
-        width: 80%;
+        width: 100%;
     }
     .about-me
     {
@@ -1804,8 +1804,8 @@ other classes overiding the dark mode declarations due to specificity*/
         flex-direction: column;
         padding-bottom: 100px;
         justify-content: space-evenly;
-        padding-left: 1.5em;
-        padding-right: 1.5em;
+        padding-left: 2.25em;
+        padding-right: 2.25em;
     }
 
     .project-title

@@ -1904,13 +1904,13 @@ other classes overiding the dark mode declarations due to specificity*/
     height: unset;
   }
   #about-text {
-    padding: 1em;
+    padding: 2em;
     top: 0;
     margin-left: 0;
     -ms-flex-item-align: center;
         -ms-grid-row-align: center;
         align-self: center;
-    width: 80%;
+    width: 100%;
   }
   .about-me {
     padding-left: 0;
@@ -1947,8 +1947,8 @@ other classes overiding the dark mode declarations due to specificity*/
     -webkit-box-pack: space-evenly;
         -ms-flex-pack: space-evenly;
             justify-content: space-evenly;
-    padding-left: 1.5em;
-    padding-right: 1.5em;
+    padding-left: 2.25em;
+    padding-right: 2.25em;
   }
   .project-title {
     font-size: 1.2em;
