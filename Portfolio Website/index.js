@@ -24,7 +24,6 @@ const switchButton = document.getElementById("d-m-switch");
 const ballArray = document.getElementsByClassName("ball");
 const linksArray = document.getElementsByClassName("links");
 const projectsArray = document.getElementsByClassName("project-tile");
-const lboxArray = document.getElementsByClassName("learning-box");
 const svgArray = document.getElementsByTagName("svg");
 const barsArray = document.getElementsByClassName("menu-bars");
 const heroParallax = document.getElementById("contact");
@@ -49,7 +48,6 @@ function darkMode()
   themeLoop(ballArray, "ball-dark");
   themeLoop(linksArray, "link-dark");
   themeLoop(projectsArray,"project-tile-dark");
-  themeLoop(lboxArray, "learning-box-dark");
   themeLoop(svgArray, "svg-icon-dark");
   themeLoop(barsArray,"span-dark");
 
@@ -69,9 +67,6 @@ function darkMode()
   document.getElementById("skill6").classList.toggle("skill6-dark");
   document.getElementById("logo").classList.toggle("logo-dark");
   document.getElementById("projects").classList.toggle("project-box-dark");
-  document.getElementById("uptosection").classList.toggle("upto-dark");
-  document.getElementById("quote-box").classList.toggle("quote-dark");
-  document.getElementById("hourglass").classList.toggle("hourglass-dark");
   document.getElementById("contact").classList.toggle("contact-dark");
   document.getElementById("back-to-top").classList.toggle("back-to-top-dark");
   document.getElementById("footer").classList.toggle("footer-dark");
